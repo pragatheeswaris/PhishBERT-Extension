@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PhishBERT Detector</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .icon {
+      width: 48px;
+      height: 48px;
+    }
+    h3 {
+      margin: 0;
+      color: #1a73e8;
+      font-size: 18px;
+    }
+    .status {
+      background: #e8f0fe;
+      padding: 12px;
+      border-radius: 8px;
+      margin: 15px 0;
+      font-size: 14px;
+    }
+    .status-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .scan-btn {
+      background: #1a73e8;
+      color: white;
+      border: none;
+      padding: 12px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+      font-size: 14px;
+      transition: background 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .scan-btn:hover {
+      background: #1765cc;
+    }
+    .footer {
+      font-size: 12px;
+      color: #5f6368;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .emoji {
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img class="icon" src="icons/icon-48.png" alt="PhishBERT Logo">
+    <h3>PhishBERT Detector</h3>
+  </div>
+  
+  <div class="status">
+    <div class="status-title">
+      <span class="emoji">🛡️</span>
+      <span>Active Protection</span>
+    </div>
+    <p>Scanning emails in real-time</p>
+  </div>
+  
+  <button class="scan-btn" id="manualScan">
+    <span class="emoji">🔍</span>
+    <span>Scan Now</span>
+  </button>
+  
+  <div class="footer">
+    <p>Detecting phishing attempts using AI</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
